@@ -24,23 +24,17 @@ return (
                 <img src={logo2} alt="logo" className="logo-img" />
             </section>
             <ul className='nav-menu'>
-            <BootstrapTooltip title="Discover new NFT">
                 <li className='li-items'>Discover</li>
-                </BootstrapTooltip>
-                <BootstrapTooltip title="Create own NFT">
                 <li className='li-items'>Create</li>
-                </BootstrapTooltip>
-                <BootstrapTooltip title="What is NFT?">
                 <li className='li-items'>About</li>
-                </  BootstrapTooltip>
             </ul>
             <section className="nav-profile">
                 <input className='search-input' placeholder="Search for NFT's"/>
                 <BootstrapTooltip title="Sign Up to Buy NFT">
                 <button className="login-btn">Get Started</button>
                 </BootstrapTooltip>
-                <BootstrapTooltip title="Profile">
-                <img src='https://static.thenounproject.com/png/881504-200.png' alt="logo" className="avatar-img" />
+                <BootstrapTooltip title="Sign In">
+                <img src='https://www.pngkey.com/png/full/324-3245219_how-to-add-new-default-avatar-to-wordpress.png' alt="logo" className="avatar-img" />
                 </BootstrapTooltip>
             </section>
         </div>

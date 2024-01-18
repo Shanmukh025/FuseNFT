@@ -3,7 +3,7 @@ import React from 'react'
 const Comp2 = () => {
 return (
     <>
-    Component 2<br/>
+    <div className='comp2-container'>Component 2</div>
     </>
 )
 }
