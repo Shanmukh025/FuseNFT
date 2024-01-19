@@ -1,11 +1,14 @@
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
+import avatar from '../assets/avatar.png';
 import logo2 from '../assets/fusenftimg.png';
+
 
 const BootstrapTooltip = styled(({ className, ...props }) => (
     <Tooltip {...props} arrow classes={{ popper: className }} />
-))(({ theme }) => ({
+    ))(({ theme }) => ({
     [`& .${tooltipClasses.arrow}`]: {
     color: theme.palette.common.black,
     },
@@ -17,26 +20,27 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
     },
 }));
 const Nav = () => {
+    const navigate = useNavigate();
 return (
     <>
         <div className="nav-container">
             <section className="nav-logo">
-                <img src={logo2} alt="logo" className="logo-img" />
+                <img src={logo2} alt="logo" className="logo-img" onClick={() => { navigate(`/`) }}/>
             </section>
             <ul className='nav-menu'>
-                <li className='li-items'>Discover</li>
-                <li className='li-items'>Create</li>
-                <li className='li-items'>About</li>
+                <li className='li-items' onClick={() => { navigate(`/Explore`) }}>Explore</li>
+                <li className='li-items' onClick={() => { navigate(`/Create`) }}>Create</li>
+                <li className='li-items' onClick={() => { navigate(`/About`) }}>About</li>
             </ul>
-            <section className="nav-profile">
+            <div className="nav-profile">
                 <input className='search-input' placeholder="Search for NFT's"/>
                 <BootstrapTooltip title="Sign Up to Buy NFT">
                 <button className="login-btn">Get Started</button>
                 </BootstrapTooltip>
                 <BootstrapTooltip title="Sign In">
-                <img src='https://www.pngkey.com/png/full/324-3245219_how-to-add-new-default-avatar-to-wordpress.png' alt="logo" className="avatar-img" />
+                <img src={avatar} alt="logo" className="avatar-img" />
                 </BootstrapTooltip>
-            </section>
+            </div>
         </div>
     </>
 )
