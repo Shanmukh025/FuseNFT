@@ -27,8 +27,8 @@ return (
             </radialGradient>
         </defs>
         </svg>
-        <p className="card-title">Zero-cost Possibilities</p>
-        <p className="card-description">FuseNFT offers users zero-cost possibilities. No variable rates, no interest and any other fees charged—ever.</p>
+        <p className="card-title">Zero-Risk Possibilities</p>
+        <p className="card-description">FuseNFT offers users zero-cost possibilities. No variable rates, no interest and any other fees charged — ever.</p>
     </div>
     </div>
 

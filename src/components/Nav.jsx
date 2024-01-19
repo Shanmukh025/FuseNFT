@@ -20,7 +20,7 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
     },
 }));
 const Nav = () => {
-    const navigate = useNavigate();
+const navigate = useNavigate();
 return (
     <>
         <div className="nav-container">
@@ -30,11 +30,12 @@ return (
             <ul className='nav-menu'>
                 <li className='li-items' onClick={() => { navigate(`/Explore`) }}>Explore</li>
                 <li className='li-items' onClick={() => { navigate(`/Create`) }}>Create</li>
+                <li className='li-items' onClick={() => { navigate(`/Wallet`) }}>Wallet</li>
                 <li className='li-items' onClick={() => { navigate(`/About`) }}>About</li>
             </ul>
             <div className="nav-profile">
-                <input className='search-input' placeholder="Search for NFT's"/>
-                <BootstrapTooltip title="Sign Up to Buy NFT">
+                <input className='search-input' id="searchbar" placeholder="Search for NFT's"/>
+                <BootstrapTooltip title="Sign Up to Buy NFT's">
                 <button className="login-btn">Get Started</button>
                 </BootstrapTooltip>
                 <BootstrapTooltip title="Sign In">

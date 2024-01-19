@@ -5,6 +5,7 @@ import About from "./components/About";
 import Create from "./components/Create";
 import Explore from "./components/Explore";
 import Home from "./components/Home";
+import Wallet from "./components/Wallet";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/Explore" element={<Explore />} />
+        <Route path="/Wallet" element={<Wallet />} />
         <Route path="/Create" element={<Create />} />
         <Route path="/About" element={<About />} />
       </Routes>

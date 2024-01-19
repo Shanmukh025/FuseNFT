@@ -17,10 +17,22 @@ li {
 body {
   width: 100%;
   height: 100vh;
-  background-color: #2e2929;
+  background-color: black;
   color: white;
   margin: 0;
   border: 0;
+  /* background-image: url("https://bmoreart.com/wp-content/uploads/2021/04/IMG_3613-1125x900.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
 }
 
 .nav-profile {
@@ -90,12 +102,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 100px;
+  width: 120px;
   border-radius: 5px;
   cursor: pointer;
 }
 .li-items:hover {
-  background-color: rgb(40, 34, 34);
+  background-color: rgba(17, 25, 40, 0.95);
 }
 .nav-container {
   padding: 10px 1.5% 10px;
@@ -106,14 +118,15 @@ body {
   height: 70px;
   border-radius: 8px;
   margin-top: 15px;
-  backdrop-filter: blur(25px) saturate(180%);
-  -webkit-backdrop-filter: blur(25px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.8);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.65);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .comp1-container {
+  border: 2px solid white;
   height: 40px;
   display: flex;
   width: 100%;
@@ -122,12 +135,13 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px 1.5% 10px;
-  height: 85vh;
+  height: 75vh;
   margin: 20px;
   border-radius: 8px;
   width: 94%;
 }
 .comp2-container {
+  border: 2px solid white;
   display: flex;
   width: 100%;
   height: 100%;
@@ -141,7 +155,8 @@ body {
   width: 94%;
 }
 .comp3-container {
-  width: 100%;
+  border: 2px solid white;
+  width: 100vw;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -151,10 +166,6 @@ body {
   margin: 20px;
   border-radius: 8px;
   width: 94%;
-}
-
-body {
-  background-color: black;
 }
 
 .about-container {
@@ -322,9 +333,11 @@ body {
         align-items: center;
         color: #ee83e5;
         font-weight: 700;
-        ins {
-          margin-left: -0.3rem;
-          margin-right: 0.5rem;
+        font-size: 20px;
+        img {
+          height: 30px;
+          width: 30px;
+          margin-right: 5px;
         }
       }
       .duration {
@@ -391,5 +404,10 @@ body {
   }
   .avatar-img {
     display: none;
+  }
+  .nav-container {
+    width: 190%;
+    height: 85px;
+    font-size: 55px;
   }
 }
