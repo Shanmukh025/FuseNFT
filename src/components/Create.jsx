@@ -1,13 +1,14 @@
-import React from 'react'
-import Nav from './Nav'
+import React from "react";
+import Comp1 from "./Comp1";
+import Nav from "./Nav";
 
 const Create = () => {
-return (
-    <>
-        <Nav/>
-        Create
-    </>
-)
-}
+    return (
+        <>
+            <Nav />
+            <Comp1 />
+        </>
+    );
+};
 
-export default Create
+export default Create;
