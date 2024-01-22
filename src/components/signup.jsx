@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/fuselogo.png";
 import Footer from "./Footer";
 import Nav from "./Nav";
 
-const Signup = () => {
+const Signup = ({ title }) => {
+    useEffect(() => {
+        document.title = "FuseNFT - Create Account";
+        return () => {
+            document.title = "FuseNFT - Create Account";
+        };
+    }, [title]);
     return (
         <>
             <Nav />

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
 
-const About = () => {
+const About = ({ title }) => {
+    useEffect(() => {
+        document.title = "FuseNFT - About";
+        return () => {
+            document.title = "FuseNFT - About";
+        };
+    }, [title]);
     return (
         <>
             <Nav />

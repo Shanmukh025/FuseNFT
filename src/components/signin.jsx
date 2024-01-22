@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/fuselogo.png";
 import Footer from "./Footer";
 import Nav from "./Nav";
 
-const Signin = () => {
+const Signin = ({ title }) => {
     const navigate = useNavigate();
+    useEffect(() => {
+        document.title = "FuseNFT - Sign In";
+        return () => {
+            document.title = "FuseNFT - Sign In";
+        };
+    }, [title]);
     return (
         <>
             <Nav />

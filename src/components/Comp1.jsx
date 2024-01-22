@@ -3,9 +3,7 @@ import React from "react";
 const Comp1 = () => {
     return (
         <>
-            <div className="comp1-container">
-                <div className="comp1"></div>
-            </div>
+            <div className="comp1-container"></div>
         </>
     );
 };

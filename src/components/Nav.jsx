@@ -20,6 +20,24 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
 }));
 const Nav = () => {
     const navigate = useNavigate();
+    const handleScroll = () => {
+        const navContainer = document.querySelector(".nav-container");
+        if (navContainer) {
+            const scrolled = window.scrollY;
+            if (scrolled > 0) {
+                navContainer.classList.add("scrolled");
+            } else {
+                navContainer.classList.remove("scrolled");
+            }
+        }
+    };
+
+    React.useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
         <>
             <div className="nav-container">
@@ -40,7 +58,7 @@ const Nav = () => {
                             navigate(`/Trending`);
                         }}
                     >
-                        Trendings
+                        Trending
                     </li>
                     <li
                         className="li-items"

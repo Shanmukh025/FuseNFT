@@ -1,8 +1,14 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
 
-const Explore = () => {
+const Explore = ({ title }) => {
+    useEffect(() => {
+        document.title = "FuseNFT - Explore Categories";
+        return () => {
+            document.title = "FuseNFT - Explore Categories";
+        };
+    }, [title]);
     return (
         <>
             <Nav />
@@ -85,6 +91,40 @@ const Explore = () => {
                     <span className="card__footer">
                         <span>PHOTOGRAPHY</span>
                         <span>10 NFT's</span>
+                    </span>
+                    <span className="card__action">
+                        <svg viewBox="0 0 448 512" title="play">
+                            <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+                        </svg>
+                    </span>
+                </div>
+                <div className="explorecard">
+                    <img
+                        src="https://i.seadn.io/s/raw/files/0f0a0bb796908281bb4bf20cb2637f73.png?auto=format&dpr=1&w=384"
+                        alt="all"
+                        className="card__img"
+                        style={{ marginTop: "-25px" }}
+                    />
+                    <span className="card__footer">
+                        <span>SPORTS</span>
+                        <span>100 NFT's</span>
+                    </span>
+                    <span className="card__action">
+                        <svg viewBox="0 0 448 512" title="play">
+                            <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+                        </svg>
+                    </span>
+                </div>
+                <div className="explorecard">
+                    <img
+                        src="https://aphrodite.gmanetwork.com/entertainment/articles/480_360_40__20210430124335.jpg"
+                        alt="all"
+                        className="card__img"
+                        style={{ marginTop: "-25px" }}
+                    />
+                    <span className="card__footer">
+                        <span>MEMES</span>
+                        <span>100 NFT's</span>
                     </span>
                     <span className="card__action">
                         <svg viewBox="0 0 448 512" title="play">
