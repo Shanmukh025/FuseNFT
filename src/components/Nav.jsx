@@ -37,6 +37,14 @@ const Nav = () => {
                     <li
                         className="li-items"
                         onClick={() => {
+                            navigate(`/Trending`);
+                        }}
+                    >
+                        Trendings
+                    </li>
+                    <li
+                        className="li-items"
+                        onClick={() => {
                             navigate(`/Explore`);
                         }}
                     >

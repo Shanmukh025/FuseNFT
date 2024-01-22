@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/fuselogo.png";
+import Footer from "./Footer";
 import Nav from "./Nav";
 
 const Signin = () => {
@@ -50,6 +51,7 @@ const Signin = () => {
                     <br />
                 </div>
             </div>
+            <Footer />
         </>
     );
 };

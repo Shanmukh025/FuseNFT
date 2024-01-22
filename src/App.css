@@ -2,6 +2,9 @@
 
 * {
     font-family: "Barlow", sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -32,6 +35,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
     width: 100%;
     background-image: url("https://images.wallpapersden.com/image/download/building-artistic-pixel-art_bWpsaWaUmZqaraWkpJRmbmdlrWZlbWU.jpg");
 }
@@ -161,9 +166,9 @@ li {
 body {
     background-color: black;
     color: white;
-    margin: 0;
+    /* margin: 0;
     border: 0;
-    background-image: url("data:image/svg+xml,%3Csvg id='10015.io' viewBox='0 0 1640 856' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='svg-pattern' x='0' y='0' width='53' height='53' patternUnits='userSpaceOnUse' patternTransform='translate(30, 30) rotate(0) skewX(0)'%3E%3Csvg width='23' height='23' viewBox='0 0 100 100'%3E%3Cg fill='%23e3bc22' opacity='1' data-darkreader-inline-fill='' style='--darkreader-inline-fill: %23e6c237;'%3E%3Cpath d='M28.1954 99.6973C29.4258 100.305 30.9206 99.9781 31.7829 98.8967L78.6579 40.1076C79.3594 39.2277 79.495 38.0238 79.0067 37.01C78.5184 35.9961 77.4926 35.3516 76.3672 35.3516H57.6584L73.1313 4.23418C73.5829 3.32598 73.5327 2.24883 72.9983 1.38672C72.4643 0.524609 71.5219 0 70.5079 0H35.3516C34.0061 0 32.8336 0.916406 32.5086 2.22188L20.7899 49.2922C20.5721 50.1672 20.7694 51.0937 21.3245 51.8041C21.8797 52.5146 22.7313 52.9297 23.6329 52.9297H37.4625L26.6495 96.3625C26.3165 97.6994 26.96 99.0875 28.1954 99.6973V99.6973ZM44.054 50.7078C44.2717 49.8328 44.0745 48.9063 43.5194 48.1959C42.9641 47.4854 42.1125 47.0703 41.211 47.0703H27.3813L37.6413 5.85938H65.779L50.3061 36.9768C49.8545 37.885 49.9047 38.9621 50.4391 39.8242C50.9731 40.6865 51.9155 41.2109 52.9295 41.2109H70.284L35.5829 84.732L44.054 50.7078Z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='%23141313' data-darkreader-inline-fill='' style='--darkreader-inline-fill: %230f1011;'%3E%3C/rect%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23svg-pattern)'%3E%3C/rect%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg id='10015.io' viewBox='0 0 1640 856' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='svg-pattern' x='0' y='0' width='53' height='53' patternUnits='userSpaceOnUse' patternTransform='translate(30, 30) rotate(0) skewX(0)'%3E%3Csvg width='23' height='23' viewBox='0 0 100 100'%3E%3Cg fill='%23e3bc22' opacity='1' data-darkreader-inline-fill='' style='--darkreader-inline-fill: %23e6c237;'%3E%3Cpath d='M28.1954 99.6973C29.4258 100.305 30.9206 99.9781 31.7829 98.8967L78.6579 40.1076C79.3594 39.2277 79.495 38.0238 79.0067 37.01C78.5184 35.9961 77.4926 35.3516 76.3672 35.3516H57.6584L73.1313 4.23418C73.5829 3.32598 73.5327 2.24883 72.9983 1.38672C72.4643 0.524609 71.5219 0 70.5079 0H35.3516C34.0061 0 32.8336 0.916406 32.5086 2.22188L20.7899 49.2922C20.5721 50.1672 20.7694 51.0937 21.3245 51.8041C21.8797 52.5146 22.7313 52.9297 23.6329 52.9297H37.4625L26.6495 96.3625C26.3165 97.6994 26.96 99.0875 28.1954 99.6973V99.6973ZM44.054 50.7078C44.2717 49.8328 44.0745 48.9063 43.5194 48.1959C42.9641 47.4854 42.1125 47.0703 41.211 47.0703H27.3813L37.6413 5.85938H65.779L50.3061 36.9768C49.8545 37.885 49.9047 38.9621 50.4391 39.8242C50.9731 40.6865 51.9155 41.2109 52.9295 41.2109H70.284L35.5829 84.732L44.054 50.7078Z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='%23141313' data-darkreader-inline-fill='' style='--darkreader-inline-fill: %230f1011;'%3E%3C/rect%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23svg-pattern)'%3E%3C/rect%3E%3C/svg%3E"); */
 }
 
 .nav-profile {
@@ -173,8 +178,8 @@ body {
     gap: 10px;
 }
 .logo-img {
-    width: 260px;
-    height: 130px;
+    width: 200px;
+    height: 100px;
     cursor: pointer;
 }
 
@@ -222,9 +227,8 @@ body {
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     font-size: 23px;
     font-weight: 600;
 }
@@ -241,8 +245,8 @@ body {
     background-color: rgba(17, 25, 40, 0.95);
 }
 .nav-container {
+    width: 100%;
     padding: 10px 1.5% 10px;
-    margin: 20px;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
@@ -274,18 +278,16 @@ footer {
 
 .comp1-container {
     border: 2px solid white;
-    height: 40px;
-    display: flex;
-    width: 100%;
+    width: 98%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 1.5% 10px;
-    height: 75vh;
-    margin: 20px;
+    height: 55vh;
+    margin: 10px;
+    margin-bottom: 20px;
     border-radius: 8px;
-    width: 94%;
     /* backdrop-filter: blur(8px) saturate(180%);
     -webkit-backdrop-filter: blur(8px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.65);
@@ -294,17 +296,16 @@ footer {
 }
 .comp2-container {
     border: 2px solid white;
-    display: flex;
-    width: 100%;
+    width: 98%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 1.5% 10px;
-    height: 75%;
-    margin: 20px;
+    height: 55vh;
+    margin: 10px;
+    margin-bottom: 20px;
     border-radius: 8px;
-    width: 94%;
     /* backdrop-filter: blur(8px) saturate(180%);
     -webkit-backdrop-filter: blur(8px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.65);
@@ -313,21 +314,94 @@ footer {
 }
 .comp3-container {
     border: 2px solid white;
-    width: 100vw;
+    width: 98%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 1.5% 10px;
     height: 55vh;
-    margin: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
     border-radius: 8px;
-    width: 94%;
     /* backdrop-filter: blur(8px) saturate(180%);
     -webkit-backdrop-filter: blur(8px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.65);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);*/
+}
+
+.explorecard {
+    --blur: 16px;
+    --size: clamp(300px, 50vmin, 600px);
+    width: var(--size);
+    aspect-ratio: 4 / 3;
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    color: #000;
+    transform: translateZ(0);
+    cursor: pointer;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(calc(1 + (var(--hover, 0) * 0.05)))
+        rotate(calc(var(--hover, 0) * 0deg));
+    transition: transform 0.2s;
+}
+
+.card__footer {
+    padding: 0 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 0.5ch;
+    background: hsl(0 0% 100% / 0.5);
+    backdrop-filter: blur(var(--blur));
+    height: 30%;
+    align-content: center;
+    font-weight: 900;
+}
+
+.card__action {
+    position: absolute;
+    aspect-ratio: 1;
+    width: calc(var(--size) * 0.15);
+    bottom: 30%;
+    right: 1.5rem;
+    transform: translateY(50%) translateY(calc((var(--size) * 0.4)))
+        translateY(calc(var(--hover, 0) * (var(--size) * -0.4)));
+    background: purple;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
+    background: hsl(0 0% 100% / 0.5);
+    backdrop-filter: blur(calc(var(--blur) * 0.5));
+    transition: transform 0.2s;
+}
+
+.card__action svg {
+    aspect-ratio: 1;
+    width: 50%;
+}
+
+.card__footer span:nth-of-type(1) {
+    font-size: calc(var(--size) * 0.065);
+}
+
+.card__footer span:nth-of-type(2) {
+    font-size: calc(var(--size) * 0.035);
+}
+
+.explorecard:is(:hover, :focus-visible) {
+    --hover: 1;
 }
 
 .about-container {
@@ -446,15 +520,22 @@ footer {
 }
 
 .explore {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.exp {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    margin: 25px;
     flex-wrap: wrap;
 }
 
 .nft {
     user-select: none;
-    max-width: 300px;
+    width: 300px;
     margin: 1rem auto;
     border: 1px solid #ffffff22;
     background-color: #282c34;
@@ -565,7 +646,7 @@ footer {
         border: 1px solid #ffffff44;
         box-shadow: 0 7px 50px 10px #000000aa;
         filter: brightness(1.3);
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
 }
 
@@ -580,5 +661,8 @@ footer {
         max-width: 100%;
         margin-left: 50px;
         justify-content: center;
+    }
+    .explore {
+        margin-left: -30px;
     }
 }

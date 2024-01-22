@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/fuselogo.png";
+import Footer from "./Footer";
 import Nav from "./Nav";
 
 const Signup = () => {
@@ -39,6 +40,7 @@ const Signup = () => {
                     <br />
                 </div>
             </div>
+            <Footer />
         </>
     );
 };
