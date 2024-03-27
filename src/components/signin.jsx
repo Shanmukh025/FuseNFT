@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/fuselogo.png";
-import Footer from "./Footer";
-import Nav from "./Nav";
-
+import Nav2 from "./Nav2";
 const Signin = ({ title }) => {
     const navigate = useNavigate();
     useEffect(() => {
@@ -14,7 +12,7 @@ const Signin = ({ title }) => {
     }, [title]);
     return (
         <>
-            <Nav />
+            <Nav2 />
             <div className="signupbox">
                 <div className="signup-container">
                     <div className=" signup-container pic2"></div>
@@ -57,7 +55,6 @@ const Signin = ({ title }) => {
                     <br />
                 </div>
             </div>
-            <Footer />
         </>
     );
 };

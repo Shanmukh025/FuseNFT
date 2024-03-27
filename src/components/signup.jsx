@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import logo from "../assets/fuselogo.png";
-import Footer from "./Footer";
-import Nav from "./Nav";
-
+import Nav2 from "./Nav2";
 const Signup = ({ title }) => {
     useEffect(() => {
         document.title = "FuseNFT - Create Account";
@@ -12,7 +10,7 @@ const Signup = ({ title }) => {
     }, [title]);
     return (
         <>
-            <Nav />
+            <Nav2 />
             <div className="signupbox">
                 <div className="signup-container">
                     <div className=" signup-container pic2"></div>
@@ -46,7 +44,6 @@ const Signup = ({ title }) => {
                     <br />
                 </div>
             </div>
-            <Footer />
         </>
     );
 };
