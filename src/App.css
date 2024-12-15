@@ -1,8 +1,7 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,100&family=IBM+Plex+Sans+Condensed:wght@200;300;400;500;600;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,100&family=IBM+Plex+Sans+Condensed:wght@200;300;400;500;600;700&display=swap");
 
 * {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
@@ -205,7 +204,7 @@ body {
 .search-input::placeholder {
     color: #fff;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 200;
 }
 .login-btn {
     padding: 0.6rem 0.8rem;
