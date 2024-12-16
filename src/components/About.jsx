@@ -194,11 +194,11 @@ const About = ({ title }) => {
                                     </radialGradient>
                                 </defs>
                             </svg>
-                            <p className="card-title">Multi-Asset Collateral</p>
+                            <p className="card-title">Enhanced Liquidity</p>
                             <p className="card-description">
-                                Deposit a variety of assets on FuseNFT, enhance
-                                your collateral ratio, and unlock liquidity in
-                                your wallet.
+                                Deposit your assets on FuseNFT, boost your
+                                collateral ratio, and unlock liquidity in your
+                                wallet.
                             </p>
                         </div>
                     </div>
@@ -268,11 +268,11 @@ const About = ({ title }) => {
                                     </radialGradient>
                                 </defs>
                             </svg>
-                            <p className="card-title">Get Yield on Deposits</p>
+                            <p className="card-title">Maximized Earnings</p>
                             <p className="card-description">
-                                While your collateral is deposited on FuseNFT,
-                                delegate it to earn the highest yield available
-                                in the Solana ecosystem.
+                                While your assets are secured on FuseNFT,
+                                delegate them to earn the highest yield
+                                available in the NFT ecosystem.
                             </p>
                         </div>
                     </div>
@@ -346,11 +346,13 @@ const About = ({ title }) => {
                                     </radialGradient>
                                 </defs>
                             </svg>
-                            <p className="card-title">Get up to 11x Leverage</p>
+                            <p className="card-title">
+                                Upto 11x Capital Efficiency
+                            </p>
                             <p className="card-description">
-                                Experience capital efficiency with FuseNFT's
-                                110% collateral ratio, enabling users to
-                                leverage up to 11x on their deposits.
+                                Experience Leverage up to 11x on your deposits
+                                with FuseNFT’s 110% collateral ratio, enabling
+                                enhanced purchasing power.
                             </p>
                         </div>
                     </div>

@@ -55,10 +55,10 @@ const Nav = () => {
                     <li
                         className="li-items"
                         onClick={() => {
-                            navigate(`/Trending`);
+                            navigate(`/Marketplace`);
                         }}
                     >
-                        Trending
+                        Marketplace
                     </li>
                     <li
                         className="li-items"
@@ -67,14 +67,6 @@ const Nav = () => {
                         }}
                     >
                         Explore
-                    </li>
-                    <li
-                        className="li-items"
-                        onClick={() => {
-                            navigate(`/Create`);
-                        }}
-                    >
-                        Create
                     </li>
                     <li
                         className="li-items"

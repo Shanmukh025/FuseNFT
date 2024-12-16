@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import Comp1 from "./Comp1";
 import Footer from "./Footer";
 import Nav from "./Nav";
+import Homecomp from "./Homecomp";
 
 const Home = ({ title }) => {
     useEffect(() => {
@@ -14,7 +14,7 @@ const Home = ({ title }) => {
         <>
             <div className="home">
                 <Nav />
-                <Comp1 />
+                <Homecomp />
                 <Footer />
             </div>
         </>
