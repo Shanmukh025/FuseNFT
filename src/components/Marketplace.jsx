@@ -28,8 +28,7 @@ const Marketplace = ({ title }) => {
                                 <p>0.031 ETH</p>
                             </div>
                             <div className="duration">
-                                <ins>◷</ins>
-                                <p>11 days left</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                         <hr />
@@ -63,8 +62,7 @@ const Marketplace = ({ title }) => {
                                 <p>0.031 ETH</p>
                             </div>
                             <div className="duration">
-                                <ins>◷</ins>
-                                <p>11 days left</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                         <hr />
@@ -98,8 +96,7 @@ const Marketplace = ({ title }) => {
                                 <p>0.031 ETH</p>
                             </div>
                             <div className="duration">
-                                <ins>◷</ins>
-                                <p>11 days left</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                         <hr />
@@ -133,8 +130,7 @@ const Marketplace = ({ title }) => {
                                 <p>0.031 ETH</p>
                             </div>
                             <div className="duration">
-                                <ins>◷</ins>
-                                <p>11 days left</p>
+                                <button>Buy</button>
                             </div>
                         </div>
                         <hr />

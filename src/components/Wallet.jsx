@@ -11,6 +11,7 @@ const Wallet = ({ title }) => {
     return (
         <>
             <Nav />
+            WALLET
         </>
     );
 };

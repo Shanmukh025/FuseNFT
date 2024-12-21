@@ -1,7 +1,11 @@
 import React from "react";
 
 const Homecomp = () => {
-    return <>Featured</>;
+    return (
+        <>
+            <div className="home"></div>
+        </>
+    );
 };
 
 export default Homecomp;
