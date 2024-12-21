@@ -36,8 +36,8 @@ body {
     align-items: center;
     gap: 15px;
     width: 30%;
-    backdrop-filter: blur(18px) saturate(180%);
     -webkit-backdrop-filter: blur(18px) saturate(180%);
+    backdrop-filter: blur(18px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.65);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
@@ -256,8 +256,8 @@ body {
     align-items: center;
     height: 70px;
     margin-top: 2px;
-    backdrop-filter: blur(8px) saturate(180%);
     -webkit-backdrop-filter: blur(8px) saturate(180%);
+    backdrop-filter: blur(8px) saturate(180%);
     background-color: rgba(51, 61, 77, 0.25);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
@@ -275,8 +275,8 @@ footer {
     align-items: center;
     text-align: center;
     padding: 10px;
-    backdrop-filter: blur(8px) saturate(180%);
     -webkit-backdrop-filter: blur(8px) saturate(180%);
+    backdrop-filter: blur(8px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.65);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
@@ -373,6 +373,7 @@ footer {
     grid-template-rows: auto auto;
     gap: 0.5ch;
     background: hsl(0 0% 100% / 0.5);
+    -webkit-backdrop-filter: blur(var(--blur));
     backdrop-filter: blur(var(--blur));
     height: 30%;
     align-content: center;
@@ -392,6 +393,7 @@ footer {
     place-items: center;
     border-radius: 0.5rem;
     background: hsl(0 0% 100% / 0.5);
+    -webkit-backdrop-filter: blur(calc(var(--blur) * 0.5));
     backdrop-filter: blur(calc(var(--blur) * 0.5));
     transition: transform 0.2s;
 }
@@ -543,6 +545,7 @@ footer {
 }
 
 .nft {
+    -webkit-user-select: none;
     user-select: none;
     max-width: 350px;
     margin: 1rem auto;
@@ -555,8 +558,8 @@ footer {
     );
     box-shadow: 0 7px 20px 5px #00000088;
     border-radius: 0.7rem;
-    backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
     overflow: hidden;
     transition: 0.5s all;
     flex-grow: 1;
@@ -665,6 +668,7 @@ footer {
 
 .glass-card {
     background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
