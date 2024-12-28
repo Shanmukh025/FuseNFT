@@ -185,6 +185,11 @@ body {
     height: 100px;
     cursor: pointer;
 }
+.carousel-image {
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+}
 
 .avatar {
     color: white;
@@ -231,6 +236,7 @@ body {
 .nav-menu {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     font-size: 23px;
     font-weight: 700;
@@ -798,6 +804,246 @@ footer {
     );
     background-size: 20px 20px;
 }
+
+.walletcard {
+    padding: 1rem;
+    background-color: rgba(51, 61, 77, 0.25);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    max-width: 320px;
+    border-radius: 20px;
+}
+
+.wallettitle {
+    display: flex;
+    align-items: center;
+}
+
+.wallettitle span {
+    position: relative;
+    padding: 0.5rem;
+    background-color: #10b981;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 9999px;
+}
+
+.wallettitle span svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    height: 1rem;
+}
+
+.wallettitle-text {
+    margin-left: 0.5rem;
+    color: white;
+    font-size: 18px;
+}
+
+.walletpercent {
+    margin-left: 0.5rem;
+    color: #02972f;
+    font-weight: 600;
+    display: flex;
+}
+
+.walletdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.walletdata p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.walletdata .walletrange {
+    position: relative;
+    background-color: #e5e7eb;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.walletdata .walletrange .walletfill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #10b981;
+    width: 76%;
+    height: 100%;
+    border-radius: 0.25rem;
+}
+.container-card-charts {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255),
+        rgba(255, 255, 255, 0.1)
+    );
+    border-radius: 32px;
+    padding: 1.6px;
+    box-shadow: 0 0px 80px -10px rgba(255, 255, 255, 0.15);
+}
+.container-card-charts::before {
+    position: absolute;
+    content: "";
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: #777777;
+    z-index: -10;
+    filter: blur(70px);
+}
+.card-charts {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, #1b1b1b, #000000);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.charts-lines {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.charts-lines i {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.lines {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.lines span {
+    width: 1.5px;
+    height: 100%;
+    margin: 0 18px;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.025) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+.tags-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.tags-card .radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    border-radius: 12px;
+    color: #a7a7a7;
+    font-size: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.tags-card .radio:hover {
+    color: #ffffff;
+}
+.tags-card .radio input {
+    display: none;
+}
+
+.tags-card .radio .name {
+    width: 100%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.tags-card .radio input:checked + .name {
+    color: #ffffff;
+    background: linear-gradient(15deg, #898989, #181818, #000000);
+    transform: scale(1.1);
+}
+
+.tags-card .radio input:checked + .name::before {
+    position: absolute;
+    background-color: #212121;
+    content: "";
+    inset: 1px;
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.main-texts {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    font-weight: 500;
+}
+.main-texts .title {
+    background-image: linear-gradient(to top left, #92400e, #f9d86d, #a6a6a6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.main-texts .change {
+    background-image: linear-gradient(to right, #8e1414, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.charts-lines path {
+    opacity: 0;
+}
+.card-charts svg {
+    transition: transform 0.5s ease;
+}
+.card-charts:hover svg {
+    transform: scale(1.5);
+}
+.icon-week path {
+    animation: draw 8s ease infinite;
+}
+.icon-month path {
+    animation: draw 8s 3s ease infinite;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 1500;
+        opacity: 0.8;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -1500;
+        opacity: 0.8;
+    }
+}
+
 .swap-icon {
     height: 40px;
     display: flex;
