@@ -49,7 +49,7 @@ const Signin = ({ title }) => {
                                 navigate(`/SignUp`);
                             }}
                         >
-                            New to FuseNFT? Create Account for free!
+                            New to FuseNFT? Create Account for Free!
                         </label>
                     </div>
                     <br />

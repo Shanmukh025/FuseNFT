@@ -4,7 +4,8 @@ const Homecards = () => {
     return (
         <>
             <br />
-            <h2 style={{ textAlign: "center" }}>EXPLORE NFT'S</h2>
+            <br />
+            <h2 style={{ textAlign: "center" }}>EXPLORE BY CATEGORIES</h2>
             <div className="exp">
                 <div className="explorecard">
                     <img

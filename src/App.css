@@ -240,6 +240,7 @@ body {
     gap: 10px;
     font-size: 23px;
     font-weight: 700;
+    margin-top: 10px;
 }
 .li-items {
     display: flex;
@@ -1187,8 +1188,5 @@ select:focus {
         max-width: 100%;
         margin-left: 50px;
         justify-content: center;
-    }
-    .explore {
-        margin-left: -30px;
     }
 }
