@@ -86,14 +86,6 @@ const Nav = () => {
                         Get Started
                     </button>
                 </BootstrapTooltip>
-                <BootstrapTooltip title="Sign In">
-                    <img
-                        src={avatar}
-                        alt="avatar"
-                        className="avatar-img"
-                        onClick={() => navigate(`/SignIn`)}
-                    />
-                </BootstrapTooltip>
             </div>
         </div>
     );

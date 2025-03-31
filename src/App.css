@@ -27,6 +27,7 @@ body {
     background-attachment: fixed;
     height: 100vh;
     margin: 0;
+    padding-top: 70px;
 }
 
 .signup-container {
@@ -271,6 +272,7 @@ body {
     &.scrolled {
         position: fixed;
         top: 0;
+        left: 0;
         width: 100%;
         z-index: 1000;
     }
