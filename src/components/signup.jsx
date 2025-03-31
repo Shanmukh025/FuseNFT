@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/fuselogo.png";
 import Nav2 from "./Nav2";
 const Signup = ({ title }) => {
+    const navigate = useNavigate();
     useEffect(() => {
         document.title = "FuseNFT - Create Account";
         return () => {
@@ -41,6 +43,30 @@ const Signup = ({ title }) => {
                         />
                     </div>
                     <button type="submit">Create Account</button>
+                    <div
+                        className="inp"
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            textAlign: "center",
+                        }}
+                    >
+                        <label
+                            style={{
+                                color: "white",
+                                fontSize: "18px",
+                                cursor: "pointer",
+                                textDecoration: "underline",
+                            }}
+                            onClick={() => {
+                                navigate(`/SignIn`);
+                            }}
+                        >
+                            Already Registered? Login to FuseNFT.
+                        </label>
+                    </div>
+
                     <br />
                 </div>
             </div>

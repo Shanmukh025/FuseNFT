@@ -41,7 +41,7 @@ const Signin = ({ title }) => {
                             style={{
                                 color: "white",
                                 textAlign: "center",
-                                fontSize: "16px",
+                                fontSize: "18px",
                                 cursor: "pointer",
                                 textDecoration: "underline",
                             }}
@@ -49,7 +49,7 @@ const Signin = ({ title }) => {
                                 navigate(`/SignUp`);
                             }}
                         >
-                            New to FuseNFT? Create Account for Free!
+                            New to FuseNFT? Create Account for free.
                         </label>
                     </div>
                     <br />

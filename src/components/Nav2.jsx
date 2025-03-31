@@ -2,7 +2,6 @@ import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
-import avatar from "../assets/avatar.png";
 import logo2 from "../assets/fusenftimg.png";
 
 const BootstrapTooltip = styled(({ className, ...props }) => (
